@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "paths": {
+      "@game/shared/*": ["../shared/dist/*"]
+    }
+  },
+  "include": ["@types/*.d.ts", "src"]
+}

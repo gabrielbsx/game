@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "paths": {
+      "@game/auth/*": ["../auth/dist/*"],
+      "@game/shared/*": ["../shared/dist/*"]
+    }
+  },
+  "include": ["@types/*.d.ts", "src"]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@game/auth",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "private": true,
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./*": "./dist/*"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "node --import tsx --watch src/index.ts",
+    "build": "tsup src --format cjs,esm --dts",
+    "test": "vitest --watch src"
+  },
+  "dependencies": {
+    "@game/shared": "^1.0.0"
+  },
+  "keywords": [],
+  "author": "gabrielbsx",
+  "license": "ISC"
+}
